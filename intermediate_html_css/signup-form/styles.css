@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  height: 100%;
+}
+
+#left-side {
+  width: 40%;
+  height: auto;
+  background-image: url(./img/logo1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#right-side {
+  width: 60%;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+#logo-holder {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Norse-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 3rem;
+  margin-top: 200px;
+}
+
+#logo-holder > img {
+  height: 200px;
+  width: auto;
+  padding: 20px;
+}
+
+#credits-footer {
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+}
+
+#credits-footer p {
+  color: white;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0px 40px 0px 40px;
+}
+
+.t-one {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.t-three {
+  margin-top: 30px;
+}
+
+#form {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+#form > p {
+  margin-left: 35px;
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  gap: 100px;
+  font-size: 1.1rem;
+}
+
+.form-right > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-left > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+input {
+  border: 2px solid #eee;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:hover:valid {
+  border: 2px solid rgb(48, 182, 48);
+}
+
+.button-3 {
+  appearance: none;
+  background-color: #b45438;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px 32px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #94462f;
+  transition: 0.2s;
+}
+
+.button-3:focus {
+  box-shadow: rgba(190, 121, 31, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #d3c494;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #c45b3b;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+#bottom {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.login {
+  text-decoration: none;
+  color: #94462f;
+  font-weight: 700;
+}

@@ -33,11 +33,37 @@ function displayLibrary() {
     let read = document.createElement("button");
     let read_text = document.createTextNode(`${book.read}`);
     read.appendChild(read_text);
+    read.classList.add("button-80");
 
     bookDiv.appendChild(read);
+    bookDiv.classList.add("book");
 
     /* Add everything to the DOM */
     booksContainer.appendChild(bookDiv);
   }
 }
 
+const book1 = new Book("afsfas", "afsfas", 22, "read");
+const book2 = new Book(
+  "harry",
+  "potaaaaaaaaaaaaaaaaaaaaaaaaaaater",
+  60,
+  "unread"
+);
+const book3 = new Book("afsfas", "afsfas", 22, "read");
+const book4 = new Book("harry", "potter", 60, "unread");
+const book5 = new Book("afsfas", "afsfas", 22, "read");
+const book6 = new Book("harry", "potter", 60, "unread");
+const book7 = new Book("afsfas", "afsfas", 22, "read");
+const book8 = new Book("harry", "potter", 60, "unread");
+
+book1.addToLibrary();
+book2.addToLibrary();
+book3.addToLibrary();
+book4.addToLibrary();
+
+book5.addToLibrary();
+book6.addToLibrary();
+book7.addToLibrary();
+book8.addToLibrary();
+displayLibrary();

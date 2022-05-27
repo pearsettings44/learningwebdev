@@ -41,6 +41,19 @@ function displayLibrary() {
   let read_text = document.createTextNode(`${book.read}`);
   read.appendChild(read_text);
   read.classList.add("button-80");
+  console.log(`${book.read}`);
+  if (book.read == "read") read.style.backgroundColor = "#74e9c6";
+  if (book.read == "not read") read.style.backgroundColor = "#ff6d6d";
+  /* Handles reading status */
+  read.addEventListener("click", function () {
+    if (this.innerHTML == "Read") {
+      this.style.backgroundColor = "#ff6d6d";
+      this.innerHTML = "Not Read";
+    } else {
+      this.style.backgroundColor = "#74e9c6";
+      this.innerHTML = "Read";
+    }
+  });
 
   /* Create a button that deletes the book */
   let deletes = document.createElement("button");
@@ -54,8 +67,9 @@ function displayLibrary() {
   deletes.addEventListener("click", function () {
     index = this.dataset.index;
     library.splice(index, 1);
-    let deletedBook = booksContainer.querySelectorAll(`[data-index="${index}"]`)[0];
-    console.log(deletedBook);
+    let deletedBook = booksContainer.querySelectorAll(
+      `[data-index="${index}"]`
+    )[0];
     booksContainer.removeChild(deletedBook.parentNode);
   });
 

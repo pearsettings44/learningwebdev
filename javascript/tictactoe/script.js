@@ -1,8 +1,8 @@
 /* Player factory function */
-const Player = (user, symbol) => {
+/* const Player = (user, symbol) => {
   return { user, symbol };
 };
-
+ */
 /* Gameboard Module */
 const gameboard = ((doc) => {
   let playerturn = 1;

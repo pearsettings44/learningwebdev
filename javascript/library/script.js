@@ -24,6 +24,21 @@ Book.prototype.changeStus = function () {
   this.read === "read" ? (this.read = "unread") : (this.read = "read");
 };
 
+/* class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+  addToLibrary() {
+    library.push(this);
+  }
+  changeStus() {
+    this.read === "read" ? (this.read = "unread") : (this.read = "read");
+  }
+} */
+
 /* Displays all books in the library */
 function displayLibrary() {
   let book = library.slice(-1)[0];

@@ -42,7 +42,26 @@ function displayLibrary() {
   read.appendChild(read_text);
   read.classList.add("button-80");
 
+  /* Create a button that deletes the book */
+  let deletes = document.createElement("button");
+  let deletes_text = document.createTextNode("Delete");
+  deletes.appendChild(deletes_text);
+  deletes.classList.add("delete");
+  deletes.classList.add("button-80");
+  deletes.dataset.index = library.length - 1;
+
+  /* Handles deletion */
+  deletes.addEventListener("click", function () {
+    index = this.dataset.index;
+    library.splice(index, 1);
+    let deletedBook = booksContainer.querySelectorAll(`[data-index="${index}"]`)[0];
+    console.log(deletedBook);
+    booksContainer.removeChild(deletedBook.parentNode);
+  });
+
   bookDiv.appendChild(read);
+  bookDiv.appendChild(deletes);
+
   bookDiv.classList.add("book");
 
   /* Add everything to the DOM */
@@ -55,6 +74,7 @@ addBookButton.addEventListener("click", function () {
   let author = authorInput.value;
   let pages = pagesInput.value;
   let read = readInput.value;
+  /* make sure that everything is fill */
   if (title && author && pages && read) {
     titleInput.value = "";
     authorInput.value = "";
@@ -63,5 +83,6 @@ addBookButton.addEventListener("click", function () {
     const book = new Book(title, author, pages, read);
     book.addToLibrary();
     displayLibrary();
+    deleteBtn = document.getElementsByClassName("delete");
   } else alert("please enter all information!");
 });

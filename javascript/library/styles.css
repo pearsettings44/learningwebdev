@@ -186,3 +186,7 @@ select {
 footer {
     margin-top: 50px;
 }
+
+.delete {
+  margin-left: 0;
+}

@@ -1,8 +1,3 @@
-/* Player factory function */
-/* const Player = (user, symbol) => {
-  return { user, symbol };
-};
- */
 /* Gameboard Module */
 const gameboard = ((doc) => {
   let playerturn = 1;
@@ -11,6 +6,16 @@ const gameboard = ((doc) => {
   let gameboard = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
   /* Get cells from the DOM */
   const cells = document.getElementsByClassName("cell");
+  /* Restart button */
+  const restarBtn = document.getElementById("game--restart");
+  /* Add event listener to restart the game */
+  restarBtn.addEventListener("click", function () {
+    win = 0;
+    gameboard = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+    [...cells].forEach(function (cell) {
+      cell.innerHTML = "";
+    });
+  });
 
   const bindCells = () =>
     /* Add event listeners on click to those cells */
@@ -35,7 +40,6 @@ const gameboard = ((doc) => {
       });
     };
 
-  bindCells();
   /* Check if theres any winners */
   const checkwinners = () => {
     /* Check x-axis */
@@ -52,6 +56,8 @@ const gameboard = ((doc) => {
     /* No win */
     return 0;
   };
+
+  bindCells();
 
   return {};
 })(document);

@@ -38,7 +38,7 @@ section {
   margin: 20px auto;
 }
 
-.game--restart {
+#game--restart {
   background-color: #f7e4ac;
   width: 200px;
   height: 50px;

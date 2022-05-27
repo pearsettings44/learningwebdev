@@ -55,7 +55,13 @@ addBookButton.addEventListener("click", function () {
   let author = authorInput.value;
   let pages = pagesInput.value;
   let read = readInput.value;
-  const book = new Book(title, author, pages, read);
-  book.addToLibrary();
-  displayLibrary();
+  if (title && author && pages && read) {
+    titleInput.value = "";
+    authorInput.value = "";
+    pagesInput.value = "";
+    readInput.value = "";
+    const book = new Book(title, author, pages, read);
+    book.addToLibrary();
+    displayLibrary();
+  } else alert("please enter all information!");
 });

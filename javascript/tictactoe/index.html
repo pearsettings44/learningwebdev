@@ -7,10 +7,17 @@
     <title>TicTacToe</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section>
       <h1 class="game--title">Tic Tac Toe</h1>
+      <h3 id="winner">MAKE YOUR MOVES!</h3>
       <div class="game--container">
         <div data-index="0" class="cell"></div>
         <div data-index="1" class="cell"></div>
@@ -22,7 +29,6 @@
         <div data-index="7" class="cell"></div>
         <div data-index="8" class="cell"></div>
       </div>
-      <h2 class="game--status"></h2>
       <button id="game--restart">Restart Game</button>
     </section>
   </body>

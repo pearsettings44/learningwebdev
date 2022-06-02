@@ -56,7 +56,7 @@ const gameboard = ((doc) => {
     if (gameboard[6] == gameboard[7] && gameboard[7] == gameboard[8])
       win = gameboard[6];
     /* Check y-axis */
-    if (gameboard[0] == gameboard[3] && gameboard[3] == gameboard[6])
+    if (gameboard[0] == gameboard[3] && gameboard[3] == gameboard[6]) 
       win = gameboard[0];
     if (gameboard[1] == gameboard[4] && gameboard[4] == gameboard[7])
       win = gameboard[1];

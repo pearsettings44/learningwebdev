@@ -14,6 +14,7 @@ function renderfooter() {
   const githublink = createHTMLelement("a");
   /* github profile url*/
   githublink.href = "https://github.com/pearsettings44";
+  githublink.target = "_blank"
   /* github icon */
   const gitIcon = createHTMLelement("img", "git");
   gitIcon.src = Icon;

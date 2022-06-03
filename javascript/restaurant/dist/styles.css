@@ -10,9 +10,13 @@
 #navbar {
   border-bottom: 2px solid #ffe6a7;
   font-size: 2rem;
-  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   color: #ffe6a7;
   font-size: 2.5rem;
@@ -41,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
 }
 
 a {
@@ -51,4 +56,8 @@ a {
   margin-left: 5px;
   width: auto;
   height: 24px;
+}
+
+#name {
+  margin-right: auto;
 }

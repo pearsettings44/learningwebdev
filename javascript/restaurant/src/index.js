@@ -1,2 +1,6 @@
+import { rendernav } from "./navbar";
+
 const maindiv = document.getElementById("content");
-maindiv.innerHTML = "heyyy";
+rendernav();
+
+export { maindiv };

@@ -1,9 +1,9 @@
 import { createHTMLelement } from "./createElements";
-import { maindiv } from "./index";
+import { maindiv } from "../index";
 
 /* Creates the home page */
 function renderhome() {
-  const homeholder = createHTMLelement("div", "home");
+  const homeholder = createHTMLelement("div", "homeholder");
   const mainheader = createHTMLelement(
     "h1",
     "mainheader",

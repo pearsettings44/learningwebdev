@@ -1,5 +1,5 @@
 import { createHTMLelement } from "./createElements";
-import { maindiv } from "./index";
+import { maindiv } from "../index";
 
 /* Creates a navbar with Home, Menu and About pages */
 function rendernav() {
@@ -10,7 +10,7 @@ function rendernav() {
   const items = ["home", "menu", "about"];
   /* Create each page */
   items.forEach((item) => {
-    const list_item = createHTMLelement("a", "", [item], `${item}`);
+    const list_item = createHTMLelement("a", item, [item], `${item}`);
     navbar.appendChild(list_item);
   });
   /* Append to the DOM */

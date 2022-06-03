@@ -1,6 +1,6 @@
 import { createHTMLelement } from "./createElements";
-import { maindiv } from "./index";
-import Icon from "./img/github-icon-white-6.png";
+import { maindiv } from "../index";
+import Icon from "../img/github-icon-white-6.png";
 
 /* Creates a footer with github username and icon */
 function renderfooter() {

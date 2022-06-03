@@ -1,12 +1,5 @@
-import { rendernav } from "./navbar";
-import { renderfooter } from "./footer";
-import { renderhome } from "./home";
+import { renderHomePage } from "./homepage";
 
 const maindiv = document.getElementById("content");
-function homepage() {
-  rendernav();
-  renderhome();
-  renderfooter();
-}
-homepage()
+renderHomePage();
 export { maindiv };

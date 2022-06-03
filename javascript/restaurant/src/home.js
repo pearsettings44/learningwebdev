@@ -20,6 +20,7 @@ function renderhome() {
   homeholder.appendChild(mainheader);
   homeholder.appendChild(secondheader);
   homeholder.appendChild(orderbutton);
+  /* Append home to the DOM */
   maindiv.appendChild(homeholder)
 }
 

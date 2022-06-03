@@ -10,14 +10,14 @@ function renderfooter() {
     "",
     "Copyright pearsettings44"
   );
-  const githublink = createHTMLelement("a")
+  const githublink = createHTMLelement("a");
   githublink.href = "https://github.com/pearsettings44";
   const gitIcon = createHTMLelement("img", "git");
   gitIcon.src = Icon;
-  gitIcon.alt = "github icon"
+  gitIcon.alt = "github icon";
   footer.appendChild(paragraph);
-  githublink.appendChild(gitIcon)
-  footer.appendChild(githublink)
+  githublink.appendChild(gitIcon);
+  footer.appendChild(githublink);
   maindiv.appendChild(footer);
 }
 

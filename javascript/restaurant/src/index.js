@@ -22,4 +22,9 @@ home.addEventListener("click", function () {
   renderfooter();
 });
 
+/* Same logic would go for the menu and about pages */
+/* Menu page: use CSS grid to display a few menus, done that before */
+/* About page: static normal page, takes like 20 minutes tops */
+/* I'll finish this project some other time :) */
+
 export { maindiv };
